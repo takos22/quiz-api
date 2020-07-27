@@ -17,7 +17,7 @@ There are 2 subdomains:
 
     ```json
     {
-      "id": 1,
+      "id": "1",
       "question": "Question?",
       "choices": ["Answer 1", "Answer 2", "Answer 3"]
     }
@@ -27,7 +27,7 @@ There are 2 subdomains:
 
   ```json
   {
-    "id": 1,
+    "id": "1",
     "answer": "Answer 2"
   }
   ```
