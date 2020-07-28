@@ -15,6 +15,8 @@ There are 2 subdomains:
 
 - `/question` - returns a random question.
 
+  `/question/<category_id>` - returns a random question from a specified category. List of categories [here](#categories).
+
     ```json
     {
       "id": 1,
@@ -31,6 +33,14 @@ There are 2 subdomains:
     "answer": "Answer 2"
   }
   ```
+
+### Categories <a name = "categories"></a>
+
+Here's the list of available categories along with their IDs:
+
+1. Tech
+2. Science
+3. Sports
 
 ## Getting Started <a name = "getting_started"></a>
 
