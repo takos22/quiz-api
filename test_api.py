@@ -45,7 +45,7 @@ class TestAPI(unittest.TestCase):
 
     def test_question_category(self):
         # question
-        r_question = requests.get(self.URL + f"/question/1")
+        r_question = requests.get(self.URL + "/question/1")
         # status code
         self.assertEqual(r_question.status_code, 200)
         # type
