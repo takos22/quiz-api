@@ -6,5 +6,5 @@ api = Api(app)
 
 from api.resources import Question, Answer
 
-api.add_resource(Question, "/question")
+api.add_resource(Question, "/question", "/question/<string:category_id>")
 api.add_resource(Answer, "/answer/<string:question_id>")
