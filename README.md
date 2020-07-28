@@ -82,4 +82,4 @@ Then run the flask API.
 flask run
 ```
 
-Then you can make requests to it! You can use the example in [test.py](test.py)
+Then you can make requests to it! You can use the example in [example.py](example.py).
