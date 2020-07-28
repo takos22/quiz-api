@@ -56,7 +56,7 @@ pip install -r requirements.txt
 
 ### Running the API
 
-Add the `FLASK_APP` enviroment variable
+Add the `FLASK_APP` enviroment variable.
 
 - In cmd:
 
@@ -70,7 +70,13 @@ Add the `FLASK_APP` enviroment variable
   export FLASK_APP=run.py
   ```
 
-Then run the flask api
+Make the database migrations.
+
+```bash
+flask db upgrade
+```
+
+Then run the flask API.
 
 ```bash
 flask run
