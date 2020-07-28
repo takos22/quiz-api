@@ -13,3 +13,13 @@ print(r.json())
 
 r = requests.get(URL + f"/answer/{r.json()['id']}")
 print(r.json())
+
+r = requests.get(URL + "/question/4")
+print(r.status_code)
+print(r.headers)
+print(r.json())
+
+r = requests.get(URL + "/answer/5")
+print(r.status_code)
+print(r.headers)
+print(r.json())
