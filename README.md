@@ -13,7 +13,7 @@ Made by [takos22](https://github.com/takos22) and [Banik](https://github.com/Ban
 
 There are 2 subdomains:
 
-- `/question` - returns a random question on the format:
+- `/question` - returns a random question.
 
     ```json
     {
@@ -23,7 +23,7 @@ There are 2 subdomains:
     }
     ```
 
-- `/answer/<id>` - returns the answer to a given question
+- `/answer/<question_id>` - returns the answer to a given question.
 
   ```json
   {
