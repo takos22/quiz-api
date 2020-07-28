@@ -7,3 +7,9 @@ print(r.json())
 
 r = requests.get(URL + f"/answer/{r.json()['id']}")
 print(r.json())
+
+r = requests.get(URL + "/question/1")
+print(r.json())
+
+r = requests.get(URL + f"/answer/{r.json()['id']}")
+print(r.json())
