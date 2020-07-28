@@ -1,5 +1,6 @@
 from flask_restful import Resource, abort
 from sqlalchemy.sql.expression import func
+import json
 from api import models
 
 
@@ -16,7 +17,7 @@ class Question(Resource):
             )
         else:
             question = models.Question.query.order_by(func.random()).first()
-        return {"id": str(question.id), "question": question.question, "choices": question.choices}
+        return {"id": str(question.id), "question": question.question, "choices": json.loads(question.choices)}
 
 
 class Answer(Resource):
