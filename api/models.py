@@ -4,7 +4,7 @@ import json
 class Question(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     question = db.Column(db.String())
-    choices = db.Column(db.String())  # list in a str (json) ex: "['1', '2', '3']"
+    choices = db.Column(db.String())  # list in a str (json) ex: '["1", "2", "3"]'
     answer = db.Column(db.String())
     category_id = db.Column(db.Integer, db.ForeignKey("category.id"))
 
