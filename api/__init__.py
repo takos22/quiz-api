@@ -12,5 +12,5 @@ api = Api(app)
 
 from api import resources, models
 
-api.add_resource(resources.Question, "/question", "/question/<string:category_id>")
-api.add_resource(resources.Answer, "/answer/<string:question_id>")
+api.add_resource(resources.Question, "/question", "/question/<int:category_id>")
+api.add_resource(resources.Answer, "/answer/<int:question_id>")

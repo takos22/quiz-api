@@ -18,11 +18,10 @@ class TestAPI(unittest.TestCase):
         self.assertIn("question", r_question.json().keys())
         self.assertIn("choices", r_question.json().keys())
         # values type
-        self.assertEqual(type(r_question.json()["id"]), str)
+        self.assertEqual(type(r_question.json()["id"]), int)
         self.assertEqual(type(r_question.json()["question"]), str)
         self.assertEqual(type(r_question.json()["choices"]), list)
         # values content
-        self.assertTrue(r_question.json()["id"].isdigit())
         self.assertGreater(len(r_question.json()["question"]), 0)
         self.assertGreater(len(r_question.json()["choices"]), 0)
 
@@ -36,10 +35,9 @@ class TestAPI(unittest.TestCase):
         self.assertIn("id", r_answer.json().keys())
         self.assertIn("answer", r_answer.json().keys())
         # values type
-        self.assertEqual(type(r_answer.json()["id"]), str)
+        self.assertEqual(type(r_answer.json()["id"]), int)
         self.assertEqual(type(r_answer.json()["answer"]), str)
         # values content
-        self.assertTrue(r_answer.json()["id"].isdigit())
         self.assertGreater(len(r_answer.json()["answer"]), 0)
         self.assertIn(r_answer.json()["answer"], r_question.json()["choices"])
 
@@ -55,11 +53,10 @@ class TestAPI(unittest.TestCase):
         self.assertIn("question", r_question.json().keys())
         self.assertIn("choices", r_question.json().keys())
         # values type
-        self.assertEqual(type(r_question.json()["id"]), str)
+        self.assertEqual(type(r_question.json()["id"]), int)
         self.assertEqual(type(r_question.json()["question"]), str)
         self.assertEqual(type(r_question.json()["choices"]), list)
         # values content
-        self.assertTrue(r_question.json()["id"].isdigit())
         self.assertGreater(len(r_question.json()["question"]), 0)
         self.assertGreater(len(r_question.json()["choices"]), 0)
 
@@ -73,10 +70,9 @@ class TestAPI(unittest.TestCase):
         self.assertIn("id", r_answer.json().keys())
         self.assertIn("answer", r_answer.json().keys())
         # values type
-        self.assertEqual(type(r_answer.json()["id"]), str)
+        self.assertEqual(type(r_answer.json()["id"]), int)
         self.assertEqual(type(r_answer.json()["answer"]), str)
         # values content
-        self.assertTrue(r_answer.json()["id"].isdigit())
         self.assertGreater(len(r_answer.json()["answer"]), 0)
         self.assertIn(r_answer.json()["answer"], r_question.json()["choices"])
 
