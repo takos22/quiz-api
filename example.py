@@ -27,3 +27,11 @@ print(r.json())
 r = requests.get(URL + "/answer/0")
 print(r.status_code)
 print(r.json())
+
+# "Tech" category
+r = requests.get(URL + "/category/1")
+print(r.json())
+
+# Categories list
+r = requests.get(URL + "/category/all")
+print(r.json())
