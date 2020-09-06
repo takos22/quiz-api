@@ -14,3 +14,5 @@ from api import resources, models
 
 api.add_resource(resources.Question, "/question", "/question/<int:category_id>")
 api.add_resource(resources.Answer, "/answer/<int:question_id>")
+api.add_resource(resources.Category, "/category/<int:category_id>")
+api.add_resource(resources.Category.All, "/category/all")
